@@ -1,0 +1,80 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+html {
+  background-color: black;
+}
+
+body {
+  max-width: 1200px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 1200px;
+  background-color: cornsilk;
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid brown;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.navigation {
+  border: 1px solid green;
+  display: flex;
+  align-items: center;
+  padding: 15px 15px;
+}
+
+main {
+  margin-top: 60px;
+  padding: 100px 20px 0 20px;
+}
+
+.intro {
+
+}
+
+.projects {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.first-slide {
+
+}
+
+.second-slide {
+
+}
+
+ {
+  height: auto;
+  width: 300px;
+}
+
+.third-slide {
+
+}
+
+.first-slide img,
+.second-slide img,
+.third-slide img {
+  height: auto;
+  width: 300px;
+}
+
+footer {
+  margin-top: 200px;
+}
