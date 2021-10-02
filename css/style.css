@@ -1,9 +1,11 @@
 * {
   font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
 }
 
 html {
   background-color: black;
+  overflow: hidden;
 }
 
 body {
