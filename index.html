@@ -4,52 +4,55 @@
     <meta charset="UTF-8">
     <link href="css/style.css" style="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet"> 
     <title>Personal web developer portfolio. I'm front-end computer engineer.</title>
   </head>
-  <body>
+  <body id="home">
     <header>
       <nav>
-        <div class="navbar">
-          <div class="Main navigation">
-            <a href="#">Main</a>
+        <div class="navbar mainNav"><a href="#">Main</a></div>
+        <div class="navbar contactsNav"><a href="contacts.html">Contacts</a></div>
+        <div class="projects-dropdown">
+          <div class="navbar projectsNav"><a href="#tableRef">Projects</a></div>
+          <div class="projects-bar">
+            <a id="projectsTable" href="#tableRef">Table references</a>
+            <a id="projectsStyle" href="#styleGuide">Style guide</a>
+            <a id="projectsHLTV" href="#HLTV">HLTV</a>          
           </div>
-          <div class="Contacts navigation">
-            <a href="#">Contacts</a>
-          </div>
-          <div class="Projects navigation">
-           <a href="#">Projects</a>
         </div>
       </div>
-      </nav>
-      <main>
-        <section class="intro">
-          <div class="intro-text">
-            <h1>Hey, my name is Zhandos and this is my personal portfolio.</h1>
-            <p>This simple portfolio was created with the purpose to test my current skills in web developing. It doesn't provide much content, only a few hastily made projects. This site was created using HTML, CSS and JavaScript.</p>
-          </div>
-        </section>
-        <h2>Feel free to check some of my projects</h2>
-        <section class="projects">          
-          <div class="slider">
-            <div class="first-slide">
-              <img src="images/fisrt slider table ref.png" alt="Preview of table reference project">
-              <p>HTML table references and popular css properties cheatsheet.</p>
-            </div>
-            <div class="second-slide">
-              <img src="images/second slider style guide.png" alt="Preview of a website style guide project">
-              <p>Website style guide project. Includes preferred colors and fonts for styling web page.</p>
-            </div>
-            <div class="third-slide">
-              <img src="images/third slider hltv.png" alt="Preview of a hltv site copy">
-              <p>An unfinished attempt to recreate a popular site, using the 12 column grid design.</p>
-            </div>            
-          </div>
-        </section>
-      </main>
-      <footer>
-        <a href="#">Email</a>
-        <a href="#">GitHub</a>
-      </footer>
+      </nav>           
     </header>
+    <main>
+      <section class="intro">
+        <h1>Hey, my name is Zhandos and this is my personal portfolio</h1>
+        <img id="avatar" src="images/Z avatar.png">
+        <div class="intro-text">            
+          <p>This simple portfolio was created with the purpose to test my current skills in web developing. It doesn't provide much content, only a few hastily made projects. This site will be done using HTML, CSS and hopefully JavaScript.</p>
+        </div>          
+      </section>        
+      <section class="projects">    
+        <h2>Feel free to check some of my projects</h2>      
+        <div class="slider">
+          <div class="slide" id="tableRef">
+            <p class="caption">HTML table references and popular css properties cheatsheet.</p>
+            <img src="images/fisrt slider table ref.png" alt="Preview of table reference project">              
+          </div>
+          <div class="slide" id="styleGuide">
+            <p class="caption">Website style guide project. Includes preferred colors and fonts for styling web page.</p>
+            <img src="images/second slider style guide.png" alt="Preview of a website style guide project">              
+          </div>
+          <div class="slide" id="HLTV">
+            <p class="caption">An unfinished attempt to recreate a popular site, using the 12 column grid design.</p>
+            <img src="images/third slider hltv.png" alt="Preview of a hltv site copy">             
+          </div>            
+        </div>          
+      </section>
+    </main>
+    <footer>
+      <a href="mailto:example@gmail.com">Email</a>
+      <a href="https://github.com/jandomar" target="_blank">GitHub</a>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
